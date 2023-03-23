@@ -21,7 +21,6 @@ namespace GuruBank.Tests
 
         [Test]
 
-
         public void ValidUserValidPass()
         {
            IWebDriver driver = new FirefoxDriver();
@@ -33,9 +32,6 @@ namespace GuruBank.Tests
                 util.ExpectTitle();
                 driver.Close();
                 driver.Quit();
-
-            
-            
         }
         
 
@@ -43,7 +39,6 @@ namespace GuruBank.Tests
 
         public void InvalidUserValidPass()
         {
-
             IWebDriver driver = new FirefoxDriver();
             Util util = new Util(driver);
 
@@ -53,9 +48,6 @@ namespace GuruBank.Tests
                 util.InvalidExpectTitle();
                 driver.Close();
                 driver.Quit();
-            
-            
-
         }
         
 
@@ -63,7 +55,6 @@ namespace GuruBank.Tests
 
         public void ValidUserInvalidPass()
         {
-
             IWebDriver driver = new FirefoxDriver();
             Util util = new Util(driver);
 
@@ -73,11 +64,8 @@ namespace GuruBank.Tests
                 util.InvalidExpectTitle();
                 driver.Close();
                 driver.Quit();
-            
-            
         }
         
-
 
         [Test]
 
@@ -92,15 +80,7 @@ namespace GuruBank.Tests
                 util.InvalidExpectTitle();
                 driver.Close();
                 driver.Quit();
-            
         }
-        
-
-
-
-
-
-
 
     }
         
